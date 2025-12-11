@@ -1,0 +1,84 @@
+types of operators :
+
+    1. Arithmetic Operators
+
+| Operator | Meaning             | Example |
+| -------- | ------------------- | ------- |
+| `+`      | Addition            | `a + b` |
+| `-`      | Subtraction         | `a - b` |
+| `*`      | Multiplication      | `a * b` |
+| `/`      | Division            | `a / b` |
+| `%`      | Modulus (remainder) | `a % b` |
+
+
+        2. Assignment Operators
+
+| Operator | Meaning             | Example                |
+| -------- | ------------------- | ---------------------- |
+| `=`      | Assign              | `a = 5`                |
+| `+=`     | Add and assign      | `a += 2` → `a = a + 2` |
+| `-=`     | Subtract and assign | `a -= 3`               |
+| `*=`     | Multiply and assign | `a *= 5`               |
+| `/=`     | Divide and assign   | `a /= 2`               |
+| `%=`     | Mod and assign      | `a %= 2`               |
+
+
+        3. Relational (Comparison) Operators
+
+| Operator | Meaning          |
+| -------- | ---------------- |
+| `==`     | Equal to         |
+| `!=`     | Not equal to     |
+| `>`      | Greater than     |
+| `<`      | Less than        |
+| `>=`     | Greater or equal |
+| `<=`     | Less or equal    |
+
+
+        4. Logical Operators
+
+| Operator | Meaning     | Example       |            |      |   |       |
+| -------- | ----------- | ------------- | ---------- | ---- | - | ----- |
+| `&&`     | Logical AND | `a>5 && b<10` |            |      |   |       |
+| `        |             | `             | Logical OR | `a>5 |   | b<10` |
+| `!`      | NOT         | `!(a==5)`     |            |      |   |       |
+
+
+        5. Increment / Decrement Operators
+
+| Operator | Meaning        |
+| -------- | -------------- |
+| `++a`    | Pre-increment  |
+| `a++`    | Post-increment |
+| `--a`    | Pre-decrement  |
+| `a--`    | Post-decrement |
+
+
+        6. Bitwise Operators
+
+| Operator | Meaning     |    |
+| -------- | ----------- | -- |
+| `&`      | AND         |    |
+| `        | `           | OR |
+| `^`      | XOR         |    |
+| `~`      | NOT         |    |
+| `<<`     | Left shift  |    |
+| `>>`     | Right shift |    |
+
+
+        7. Ternary Operator
+
+condition ? value1 : value2;
+ex :  int age = 20;
+string msg = (age >= 18) ? "Adult" : "Minor";
+
+
+
+        8. Special Operators
+    
+| Operator   | Meaning                  |
+| ---------- | ------------------------ |
+| `sizeof()` | Returns size of variable |
+| `&`        | Address of variable      |
+| `*`        | Pointer dereference      |
+| `::`       | Scope resolution         |
