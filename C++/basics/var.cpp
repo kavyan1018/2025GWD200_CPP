@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-    bool boolean = "true";
+    bool boolean = false;
     string Letter = "Royal"; 
 
 
