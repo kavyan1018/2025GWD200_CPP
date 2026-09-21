@@ -12,7 +12,7 @@ int main()
         {7, 8, 9},
         {10, 11, 12}};
 
-    int c[4][6];
+    int c[4][3];
     int i, j;
 
     // copy the First array
