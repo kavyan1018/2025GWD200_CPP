@@ -1,0 +1,98 @@
+#include <stdio.h>
+#define SIZE 5
+
+int queue[SIZE];
+int front = -1; // first ele
+int rear = -1;  // last ele
+
+// insert the ele
+void enqueue(int value)
+{
+
+    if ((rear + 1) % SIZE == front)
+    {
+
+        printf("Queue is Full\n");
+    }
+    else
+    {
+        if (front == -1)
+        {
+            front = 0;
+        }
+
+        rear = (rear + 1) % SIZE;
+
+        queue[rear] = value;
+
+        printf("\n %d Inserted !\n", value);
+    }
+}
+
+void dequeue()
+{
+
+    if (front == -1)
+    {
+        printf("Queue is Empty !!");
+    }
+    else
+    {
+
+        printf("\n%d removerd\n", queue[front]);
+
+        if (front == rear)
+        {
+            front = -1;
+            rear = -1;
+        }
+        else
+        {
+            front = (front + 1) % SIZE;
+        }
+    }
+}
+
+int display()
+{
+
+    if (front == -1)
+    {
+        printf("Queue is Empty !!");
+    }
+    else
+    {
+        int i = front;
+
+        printf("Circular Queue...");
+
+        while (1)
+        {
+            printf("%d", queue[i]);
+
+            if (i == rear)
+                break;
+
+            i = (i + 1) % SIZE;
+        }
+        printf("\n");
+    }
+}
+
+int main()
+{
+    enqueue(10);
+    enqueue(20);
+    enqueue(30);
+    enqueue(40);
+    enqueue(50);
+    display();
+    dequeue();
+    dequeue();
+
+    enqueue(60);
+    enqueue(70);
+    display();
+
+    return 0;
+}
